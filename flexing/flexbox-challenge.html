@@ -4,53 +4,56 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style2.css" />
+    <link rel="stylesheet" href="flex-style.css" />
     <title>Converse For Sale</title>
   </head>
   <body>
     <div class="container">
       <article>
-        <h2 id="item-title">converse chuck taylor</h2>
+        <h2 class="item-title">converse chuck taylor</h2>
         <h5 class="sign-sale">Sale</h5>
         <div class="content">
           <img
-            src="img/challenges.jpg"
+            src="challenges.jpg"
+            class="item-img"
             alt="Chuck Taylor Shoes"
             class="item-img"
           />
 
-          <div class="item-overview">
-            <div class="price-fee">
-              <h4 id="item-price">$65.00</h4>
-              <p class="shipping-fee">free shipping</p>
+          <div class="item-overview-container">
+            <div class="item-overview">
+              <div class="price-fee">
+                <h4 class="item-price">$65.00</h4>
+                <p class="shipping-fee">free shipping</p>
+              </div>
+              <div class="clearfix"></div>
+
+              <p class="item-description">
+                Ready to dress up or down, these classic canvas Chucks are an
+                everyday wardrobe staple.
+              </p>
+              <a href="#" class="item-link">More information &rarr;</a>
+              <ul class="colors">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
             </div>
-            <div class="clearfix"></div>
+            <div class="item-overview">
+              <h5 class="item-details">product details</h5>
 
-            <p class="item-description">
-              Ready to dress up or down, these classic canvas Chucks are an
-              everyday wardrobe staple.
-            </p>
-            <a href="#" class="item-link">More information &rarr;</a>
-            <ul class="colors">
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
-          </div>
-          <div class="item-overview">
-            <h5 class="item-details">product details</h5>
-
-            <ul>
-              <li>Lightweight, durable canvas sneaker</li>
-              <li>Lightly padded footbed for added comfort</li>
-              <li>Iconic Chuck Taylor ankle patch</li>
-            </ul>
+              <ul class="list-details">
+                <li>Lightweight, durable canvas sneaker</li>
+                <li>Lightly padded footbed for added comfort</li>
+                <li>Iconic Chuck Taylor ankle patch</li>
+              </ul>
+            </div>
           </div>
         </div>
 
-        <button>Add to cart</button>
+        <button class="btn-addtocart">Add to cart</button>
       </article>
     </div>
   </body>

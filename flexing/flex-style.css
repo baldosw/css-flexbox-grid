@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  color: #181a20;
+}
+
+.container {
+  width: 80%;
+  border: 5px solid #000;
+  margin: 300px auto auto auto;
+}
+
+article {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.item-img {
+  width: 30%;
+  height: 30%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.item-title {
+  background: #f7f7f7;
+  text-align: center;
+  padding: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.sign-sale {
+  background-color: red;
+  color: #fff;
+  display: inline-block;
+  font-size: 20px;
+  padding: 10px 15px;
+  position: absolute;
+  left: -40px;
+  top: -20px;
+}
+
+.content {
+  display: flex;
+  gap: 20px;
+}
+
+.item-overview-container {
+  display: flex;
+  margin: 20px;
+  gap: 30px;
+  margin-top: 70px;
+}
+
+.item-price,
+.item-details {
+  font-size: 25px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.shipping-fee {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: #acaaab;
+}
+
+.item-description {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.list-details li {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.item-link:link {
+  color: inherit;
+  font-weight: 600;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.colors {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+.colors li {
+  height: 30px;
+  width: 30px;
+}
+
+.colors li:nth-child(1) {
+  background-color: red;
+}
+
+.colors li:nth-child(2) {
+  background-color: yellow;
+}
+
+.colors li:nth-child(3) {
+  background-color: blue;
+}
+
+.colors li:nth-child(4) {
+  background-color: beige;
+}
+
+.colors li:nth-child(5) {
+  background-color: #000;
+}
+
+.btn-addtocart {
+  padding: 20px;
+  outline: none;
+  background-color: #000;
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: uppercase;
+  border: none;
+}
+
+.btn-addtocart:hover {
+  color: #000;
+  background-color: #f7f7f7;
+  cursor: pointer;
+}
