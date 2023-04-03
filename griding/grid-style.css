@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  color: #181a20;
+}
+
+.container {
+  margin: auto;
+  width: 70%;
+
+  align-items: center;
+}
+
+article {
+  border: solid 4px #000;
+
+  position: relative;
+  margin-top: 250px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 20px;
+}
+
+.item-overview-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.item-overview-container .item-overview {
+  padding: 10px;
+}
+
+.item-overview-container .item-overview:nth-of-type(1) {
+  grid-column: 1/ 2;
+  grid-row: 1 / 2;
+}
+
+.item-overview-container .item-overview:nth-of-type(2) {
+  grid-column: 2/ 3;
+  grid-row: 1 / 2;
+  padding-left: 10px;
+}
+
+.item-img {
+  height: 250px;
+  grid-column: 1 / 2;
+  grid-row: 1 / -1;
+  display: block;
+}
+
+.item-title {
+  grid-column: 1 / -1;
+  background-color: #f7f7f7;
+  padding: 15px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.sign-sale {
+  background-color: red;
+  display: inline-block;
+  position: absolute;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 18px 27px;
+  top: -30px;
+  left: -43px;
+}
+
+.btn-addtocart {
+  grid-row: 3 / 3;
+  grid-column: 1 / -1;
+}
+
+.item-price {
+  font-size: 20px;
+}
+
+.shipping-fee {
+  text-transform: uppercase;
+
+  font-weight: 700;
+  color: #acaaab;
+}
+
+.item-description {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.item-link:link {
+  color: #181a20;
+  font-weight: 700;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.item-details {
+  font-size: 20px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.list-details {
+  font-weight: 600;
+  line-height: 1.7;
+  margin-left: 15px;
+}
+
+.colors li {
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.colors li:first-child {
+  background-color: red;
+}
+
+.colors li:nth-child(2) {
+  background-color: yellow;
+}
+
+.colors li:nth-child(3) {
+  background-color: pink;
+}
+
+.colors li:nth-child(4) {
+  background-color: purple;
+}
+
+.colors li:nth-child(5) {
+  background-color: beige;
+}
+
+.btn-addtocart {
+  display: block;
+  width: 100%;
+  outline: none;
+  border: none;
+  background-color: #181a20;
+  color: #fff;
+  padding: 18px;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.btn-addtocart:hover {
+  background-color: #f7f7f7;
+  color: #181a20;
+  cursor: pointer;
+}
+
+.price-fee {
+  display: flex;
+  width: 91%;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
