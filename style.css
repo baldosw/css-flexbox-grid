@@ -26,7 +26,7 @@ body {
   padding-left: 40px;
   padding-right: 40px; */
   padding: 20px 40px;
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
   /* height: 80px; */
 }
 
@@ -35,9 +35,9 @@ nav {
   /* text-align: center; */
 }
 
-article {
+/* article {
   margin-bottom: 60px;
-}
+} */
 
 .post-header {
   margin-bottom: 40px;
@@ -306,25 +306,49 @@ nav p {
   margin-bottom: 5px;
   display: block;
 }
-
-.row {
+/* Flexbox */
+/* .row {
   display: flex;
   gap: 75px;
   margin-bottom: 60px;
   align-items: flex-start;
-}
+} */
 
 article {
   /* flex: 0 0 825px; */
 
-  flex: 1;
+  /* flex: 1; */
 
   /* Let the article occupy the available space */
-
+  /* 
   margin-bottom: 0;
-  background-color: red;
+  background-color: red; */
+}
+/* 
+aside {
+  flex: 0 0 300px;
+} */
+/* CSS GRID LAYOUT */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  column-gap: 75px;
+  row-gap: 60px;
+  align-items: start;
+}
+
+.main-header {
+  grid-column: 1 / -1;
+}
+
+article {
 }
 
 aside {
-  flex: 0 0 300px;
+  /* align-self: self-start; */
+}
+
+footer {
+  grid-column: 1 / -1;
 }
